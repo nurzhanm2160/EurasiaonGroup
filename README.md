@@ -1,2 +1,4 @@
-### Команда для запуска сервера: 
-json-server --watch data.json
+### Установка зависимостей: 
+npm install
+### Запуск json-server 
+npm run server

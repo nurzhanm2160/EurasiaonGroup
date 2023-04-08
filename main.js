@@ -42,10 +42,11 @@ const input = document.getElementById('input')
 const sendButton = document.getElementById('send')
 
 sendButton.addEventListener('click', () => {
-  createPost(input.value)
-  clearInput()
-  clearTemplate()
-  renderTemplate()
+  createPost(input.value).then(r => {
+    clearInput()
+    clearTemplate()
+    renderTemplate()
+  })
 })
 
 const clearInput = () => input.value = ''
